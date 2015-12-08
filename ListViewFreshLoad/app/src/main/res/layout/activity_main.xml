@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffffff"
+        android:id="@+id/top_bar"
+        android:paddingLeft="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="学习园地"
+            android:layout_centerVertical="true"
+            android:textSize="24dp"
+            android:textColor="#ff000000"/>
+    </RelativeLayout>
+    <com.yejia.listviewfreshload.FreshLoadListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#ffffffff"
+        android:dividerHeight="3dp"
+        android:id="@+id/lv_posts"></com.yejia.listviewfreshload.FreshLoadListView>
+
+</RelativeLayout>
